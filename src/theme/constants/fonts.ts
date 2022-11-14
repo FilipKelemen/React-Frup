@@ -1,0 +1,1 @@
+export const PRODUCT_TITLE_FONT_SIZES = { xs: '0.95rem', sm: '1.05rem', lg: '1.2rem' }
