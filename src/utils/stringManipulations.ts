@@ -8,21 +8,21 @@ export const operateWithPixels = (
   operationCallback: (a: number,b: number) => number) => {
     if(!firstNumberOfPixels.endsWith('px')) {
       console.error('The first string does not end in px')
-      return
+      return ''
     }
     if(!secondNumberOfPixels.endsWith('px')) {
       console.error('The second string does not end in px')
-      return
+      return ''
     }
     const numberFromFirstString = firstNumberOfPixels.slice(0,-2)
     const numberFromSecondString = secondNumberOfPixels.slice(0,-2)
     if(isNaN(Number(numberFromFirstString))) {
       console.error('The first string does not parse to a number')
-      return
+      return ''
     }
     if(isNaN(Number(numberFromSecondString))) {
       console.error('The second string does not parse to a number')
-      return
+      return ''
     }
   return operationCallback(Number(numberFromFirstString),Number(numberFromSecondString)) + 'px'
 }

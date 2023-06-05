@@ -12,9 +12,6 @@ import {Link} from '@mui/material'
 import {ROUTES} from '../../app/constants'
 
 const BeginCheckoutContainer = () => {
-  const cartId = useAppSelector(selectUserCartId)
-  const {data: cartCache, error, isLoading, isSuccess, isError} = useGetCartQuery(cartId);
-
 
   return (
     <CartCard sx={{margin:{xs:'12px',md:'0'}, paddingX: '12px', paddingY: '14px'}}>

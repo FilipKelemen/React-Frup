@@ -40,6 +40,19 @@ let materialTheme = createTheme({
           boxShadow: 'none'
         }
       }
+    },
+    MuiStepIcon: {
+      styleOverrides: {
+        root: {
+          color: secondaryMainColor,
+          '& .Mui-completed': {
+            color: successMainColor,
+          },
+          '& .Mui-active': {
+            color: successMainColor,
+          },
+        }
+      }
     }
   }
 })

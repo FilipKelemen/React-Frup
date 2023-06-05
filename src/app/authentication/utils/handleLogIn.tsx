@@ -27,7 +27,7 @@ export const handleLogIn = (googleResponse: CredentialResponse) => {
     const cartId = store.getState().authentication.cartId
     if(cartId) {
       //we refetch the cart if we log in again
-      store.dispatch(cartAPI.util.invalidateTags(['CartTag']))
+      store.dispatch(cartAPI.endpoints.getCart.initiate(cartId))
     }
   })
 }

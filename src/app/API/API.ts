@@ -1,6 +1,6 @@
 import {createApi, fetchBaseQuery} from '@reduxjs/toolkit/query/react'
 import {RootState} from '../store/store'
-const PROTECTED_ENDPOINTS = ['getCart','getCartOfUser','postCartEntry','updateCartEntry','deleteCartEntry']
+const PROTECTED_ENDPOINTS = ['getCart','getCartOfUser','postCartEntry','updateCartEntry','deleteCartEntry','updateAddress']
 
 export const API = createApi({
   reducerPath: "API",

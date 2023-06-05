@@ -5,7 +5,7 @@ import {OperationCallbacks} from '../../utils/models/stringManipulation'
 
 //MODIFY THIS AND EVERYTHING SHOULD ALIGN
 const WIDTH_OF_DELETE_BUTTON = {xs: '23px',sm:'25px', md: '25px', lg: '29px'}
-const DIAMETERS_OF_QUANTITY_BUTTONS = {xs: '25.5px',sm:'29px', md: '31px', lg: '35px'}
+const DIAMETERS_OF_QUANTITY_BUTTONS = {xs: '25.5px',sm:'29px', md: '31px', lg: '33px'}
 const COMPENSATION = '8px'
 
 export const QUANTITY_BUTTONS_STYLES = {width: DIAMETERS_OF_QUANTITY_BUTTONS, height: DIAMETERS_OF_QUANTITY_BUTTONS}

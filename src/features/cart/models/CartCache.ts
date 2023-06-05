@@ -1,5 +1,5 @@
 import {CartEntry} from './CartEntry'
-import {Address} from './Address'
+import {AddressCache} from '../../addresses/models/Address'
 
 export interface CartCache {
   cart: Cart
@@ -11,6 +11,6 @@ export interface Cart {
   paymentMethod: string | null
   status: string
   cartEntries: Array<CartEntry>
-  billingAddress: Address;
-  deliveryAddress: Address;
+  billingAddress: AddressCache;
+  deliveryAddress: AddressCache;
 }
